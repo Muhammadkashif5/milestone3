@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./resume.css" />
+  </head>
+  <body>
+    <div class="container" id="resumeContent" >
+      <!-- Header Section -->
+      <header>
+        <div class="name-section">
+          <h1 id="name"></h1>
+          <p id="title">GIAIC Trainee</p>
+        </div>
+      </header>
+
+      <!-- Contact and Profile Section -->
+      <div class="main-content">
+        <section class="contact-profile" style="width: 50%;">
+          <div class="skills contact">
+            <h2>Contact Details</h2>
+            <p id="contact"></p>
+            <p id="email"></p>
+          </div>
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul style="list-style-type:disc" id="skills">
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h2>Languages</h2>
+            <ul style="list-style-type:disc" id="languages">
+            </ul>
+          </div>        
+        </section>
+
+        <section style="width: 70%;">
+          <div class="profile skills mb">
+            <h2>Profile</h2>
+            <p id="summary">
+              I am a final-year student in BS Electrical Engineering Technology at Ziauddin University, passionate about leveraging technology to solve real-world problems. I have hands-on experience particularly with HTML, CSS, and TypeScript, and have successfully built number of projects. With a strong foundation in programming and project development, I aim to continue learning and growing in the field of AI and contribute to cutting-edge projects.
+            </p>
+          </div>
+
+          <div class="right-column mb">
+            <h2>Experience</h2>
+            <div class="job" id="experience"></div>
+
+            <div class="right-column">
+              <h2>References</h2>
+              <p class="reference-text">References are available upon request. Please feel free to contact for further details.</p>
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 5px; margin: 20px 0px;">
+      <button id="downloadBtn" style="font-size: 20px; padding: 10px;">Download PDF</button>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="./resume.js"></script>
+</html>
